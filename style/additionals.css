@@ -1,6 +1,6 @@
 @font-face {
     font-family: Custumfont;
-    src: url('/style/digital-7.ttf');
+    src: url('../style/digital-7.ttf');
 }
 
 * {
