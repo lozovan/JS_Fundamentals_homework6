@@ -1,17 +1,22 @@
 class createListener {
     constructor(elementsGroup, mutableGroup) {
         this.elementsGroup = elementsGroup;
+        this.mutableGroup = mutableGroup;
+        this.newActiveElement = '';
+    }
+
+    set MutableGroup(mutableGroup) {
         if (mutableGroup && typeof mutableGroup === 'object') {
             this.mutableGroup = mutableGroup;
         } else {
             this.mutableGroup = null;
         }
-        this.newActiveElement = '';
     }
 
     getElementsGroup() {
         return this.elementsGroup;
     }
+
     getMutableGroup() {
         return this.mutableGroup;
     }
@@ -75,6 +80,4 @@ color.addListener();
 const size = new createListener(propertiesSize);
 size.addListener();
 size.changePrice();
-
-
 quanti.addEventListener('change', size.changePrice);
