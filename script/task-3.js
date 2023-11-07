@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const body = document.querySelector("body");
-
     const main = document.createElement("main");
     main.className = "mainClass check item";
 
@@ -12,5 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     div.appendChild(paragraph);
     main.appendChild(div);
-    body.appendChild(main);
+    document.body.appendChild(main);
 });
