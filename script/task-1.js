@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     runTaskButton.addEventListener('click', function () {
         const ulElements = document.querySelectorAll("#list li");
-        const resultArray = [];
         const arrayUlElements = Array.from(ulElements);
         const lengthList = arrayUlElements.length;
 
